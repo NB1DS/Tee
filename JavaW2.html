@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <p id="demo">XXXXX</p>
+    <script language="JavaScript">
+        function myFunction() {
+            alert('Hello Jakkarin');
+        }
+        let cars = ["Saab","Volvo","BMW"];
+        //document.write(cars.length);
+        cars.sort();
+        cars.push("Honda");
+
+        document.getElementById('demo').innerHTML=cars.pop();
+
+        const objCar={type:"Fiat",model:"500",color:"white"};
+        document.getElementById('demo').innerHTML=objCar.color;
+
+        let x=5, y=6;
+        let Y=x+y;
+        document.getElementById('demo').innerHTML=typeof(Y+"");
+
+        //var carName="Volvo";
+        //var carName;
+
+        let g="5"+2+3;
+        document.getElementById('demo').innerHTML=g;
+
+        let c=2+3+"5";
+        document.getElementById('demo').innerHTML=c;
+
+        let a=5,b=6;
+        a+=5;
+        document.getElementById('demo').innerHTML=a;
+
+    </script>
+
+    <p id="demoif">XXXXX</p>
+    <script language="JavaScript">
+        const hour=new Date().getHours();
+        let greeting;
+
+        if(hour<10){
+            greeting="Good Morning!";
+        }if(hour>20){
+            greeting="Good Day!";
+        }else{
+            greeting="Good Evening!"
+        }
+
+        document.getElementById('demoif').innerHTML=greeting;
+
+    </script>
+
+    <p id="demoif3">XXXXX</p>
+    <script language="JavaScript">
+        let text="";
+        switch(new Date().getDay()){
+            case 6:
+                text="Today is Saturday";
+                break;
+            case 0:
+                text="Today is Sunday";
+                break;
+            default:
+                text="Looking forward to the Weekend";            
+
+        }
+        document.getElementById('demoif3').innerHTML=text;
+
+    </script>
+
+    <p id="demoFor">XXXXX</p>
+    <script language="JavaScript">
+        const cars1=["BMW","Volvo","Saab","Ford","Fiat","Audi"];
+        let textCar="";
+
+        for(let i=0; i<cars1.length; i++){
+            textCar += cars1[i]+"<br>";
+        }
+        document.getElementById('demoFor').innerHTML=textCar;
+
+    </script>
+
+    <p id="demoForfruits">XXXXX</p>
+    <script language="JavaScript">
+        const fruits=["Banana","Orange","Apple","Mango"];
+        let flen = fruits.length;
+
+        let txt = "<ul>";
+            for (let o=0; o<flen; o++){
+                txt+="<li>"+fruits[o]+"</li>";
+            }
+        txt +="</ul>";
+        document.getElementById('demoForfruits').innerHTML=txt;
+    </script>
+
+    <p id="demoWhile">XXXXX</p>
+        <script language ="javascript">
+            const cars2 =["BMW","Volvo","Saab","Ford","Fiat","Audi"];
+            let ii = 0;
+            let txtcar ="";
+            while (cars2[ii]){
+                txtcar += cars2[ii] + "<br>";
+                ii++;
+            }
+             
+            document.getElementById("demoWhile").innerHTML= txtcar;
+        </script>
+
+    </script>
+    </body>
+    </html>
