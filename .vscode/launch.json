@@ -7,8 +7,6 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open Ex1Web.html",
-            "file": "c:\\Users\\surat\\Documents\\GitHub\\Tee\\Ex1Web.html"
         }
     ]
 }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <title>JavaScript Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script language="javascript">
+            function myFunction(){
+                alert('Hello Jakkarin')
+            }
+        </script>
+    </head>
+    <body>
+        <script language="javaScript">
+            document.write("Hello Jakkarin")
+        </script>
+        <p>
+            <button type="button" onclick="myFunction()">click to call myFunction</button>
+        </p>
+
+        <p>
+            <p id="demo">JavaScript can change HTML content</p>
+            <button type="button" onclick='document.getElementById("demo").innerHTML="Hello JavaScript!"'>click to change content</button>
+        </p>
+
+        <p>
+            <p>In this case JavaScript change the value of th src (source) attribute of an immage</p>
+            <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">turn on the light</button>
+            <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+            <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">turn off the light</button>
+        </p>
+
+        <p>
+            <h2 id="demostyle">JavaScript can change the style of an HTML element.</h2>
+            <button type="button" onclick="document.getElementById('demostyle').style.fontSize='35px'">Click Me!</button>
+        </p>
+
+        <p>
+            <p>JavaScript can show hidden HTML element.</p>
+            <button type="button" onclick="document.getElementById('demohidden').style.display='block'">Click to show!</button>
+            <p id="demohidden" style="display:none">Hello JavaScript!</p>
+            <button type="button" onclick="document.getElementById('demohidden').style.display='none'">Click to hide!</button>
+        </p>
+    </body>
+</html>
