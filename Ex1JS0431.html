@@ -7,17 +7,17 @@
 </head>
 <body>
 
-<p id="demo">XXXXX</p>
-<button type="button" onclick="reversetext()">click to reverse</button>
+    <p id="demo">XXXXX</p>
+    <button type="button" onclick="reversetext()">click to reverse</button>
 
-<script language="JavaScript">
-    let x = ["WIND"];
-    document.getElementById("demo").innerHTML = x;
+    <script language="JavaScript">
+        let x = ["WIND"];
+        document.getElementById("demo").innerHTML = x;
 
-    function reversetext() {
-        document.getElementById("demo").innerHTML = x[0].split('').reverse().join('');
-    }
-</script>
+        function reversetext() {
+            document.getElementById("demo").innerHTML = x[0].split('').reverse().join('');
+        }
+    </script>
 
 </body>
 </html>
