@@ -1,23 +1,20 @@
 <!DOCTYPE html>
-<html lang="th">
+<html>
 <head>
-    <title>JavaScript Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reverse Text Example</title>
 </head>
 <body>
+    <div id="result"></div>
 
-    <p id="demo">XXXXX</p>
-    <button type="button" onclick="reversetext()">click to reverse</button>
-
-    <script language="JavaScript">
-        let x = ["WIND"];
-        document.getElementById("demo").innerHTML = x;
-
-        function reversetext() {
-            document.getElementById("demo").innerHTML = x[0].split('').reverse().join('');
+    <script>
+        function reverseText(inputText) {
+            return inputText.split('').reverse().join('');
         }
-    </script>
 
+        let inputMessage = "WIND";
+        let reversedMessage = reverseText(inputMessage);
+
+        document.getElementById("result").innerText = reversedMessage;
+    </script>
 </body>
 </html>

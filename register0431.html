@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <title>Shoping Online</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+        .navbar {
+        margin-bottom: 50px;
+        border-radius: 0;
+        }
+    
+        /* Remove the jumbotron's default bottom margin */ 
+        .jumbotron {
+        margin-bottom: 0;
+        }
+   
+        /* Add a gray background color and some padding to the footer */
+        footer {
+        background-color: #f2f2f2;
+        padding: 25px;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container text-center">
+            <h1>BookStore</h1>
+            <p>Search, Learn and Grow.</p>
+        </div>
+    </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a herf="#"><span class="glyphicon glyphicon-user"></span>Your Account</a></li>
+                    <li><a herf="#"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Register</h2>
+        <form class="form-horizontal">
+            <div className="form-group">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                        <span class="sr-only">70% Complete</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="profilePhoto"></label>
+                <div class="col-sm-10 justify-content-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/482/482636.png" class="avatar" width="55" height="45" alt="profilePhoto" id="profilePhoto">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="firstname">ชื่อ:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control input-lg" id="firstname" placeholder="Firstname" disabled>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="lastName">นามสกุล:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="lastname" placeholder="Lastname" disabled>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="birthday">วัน เดือน ปี เกิด:</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" id="birthday" placeholder="pick date">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="optradio">เพศ:</label>
+                <div class="col-sm-10">
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" checked>ชาย</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio">หญิง</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" disabled>อื่นๆ</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="optradio">radio บรรทัดเดียวกัน:</label>
+                <div class="col-sm-10">
+                    <label class="radio-inline"><input type="radio" name="optradio" checked>Option 1</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
+                    <label class="radio-inline"><input type="radio" name="optradio">Option 3</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="sct1">ชั้นปี:</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="sct1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>อื่นๆ</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="checkbox">ความสนใจ:</label>
+                <div class="col-sm-10">
+                    <label class="checkbox-inline"><input type="checkbox" value="1">เกม</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="2">แอปพลิเคชั่น</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="3">คอนเทนท์</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="Address">ที่อยู่:</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" rows="5" id="Address"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="postCode">จำนวนพี่น้อง:</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="postCode">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="form-group">เบอร์โทร:</label>
+                <div class="col-sm-10">
+                    <input type="tel" class="form-control" id="phone">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email">อีเมล:</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">พาสเวิด:</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">บันทึก</button>
+                    <button type="submit" class="btn btn-primary">ยกเลิก</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
